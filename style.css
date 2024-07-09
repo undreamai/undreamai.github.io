@@ -1,16 +1,9 @@
-a,
-a:focus,
-a:hover {
-  color: #fff;
-}
-
 html,
 body {
   height: 100%;
   background-color: #333;
   font-family: 'Roboto', sans-serif;
 }
-
 
 body {
   display: -ms-flexbox;
@@ -23,6 +16,13 @@ body {
   text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
   box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
 }
+
+a,
+a:focus,
+a:hover {
+  color: #fff;
+}
+
 
 .product
 {
@@ -43,7 +43,6 @@ body {
 .container {
   max-width: 100em;
   width:95vh;
-  /*box-shadow: inset 0 0 5rem rgba(0, 0, 0, .3);*/
 }
 
 .company-name {
@@ -51,53 +50,6 @@ body {
 }
 .company-name-ai {
   color: rgba(255, 255, 255, .65);
-}
-
-
-@media (min-width: 48em) {
-  .company-name {
-    float: left;
-  }
-  .content {
-    padding: 0rem 3rem;
-  }
-}
-
-
-@media (min-height: 400px) {
-  html {
-    font-size: 10px;
-  }
-}
-
-@media (min-height: 600px) {
-  html {
-    font-size: 11px;
-  }
-}
-
-@media (min-height: 700px) {
-  html {
-    font-size: 14px;
-  }
-}
-
-@media (min-height: 800px) {
-  html {
-    font-size: 14px;
-  }
-}
-
-@media (min-height: 1000px) {
-  html {
-    font-size: 16px;
-  }
-}
-
-@media (min-height: 1200px) {
-  html {
-    font-size: 26px;
-  }
 }
 
 
@@ -143,4 +95,29 @@ body {
     font-size: 9em;
     line-height: 1.3em;
     text-shadow: 0 0 1rem #fefefe;
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+    body {
+      font-size: 10px !important;
+      h4 { font-size: 0.9rem; margin-bottom: .25rem; }
+      h5 { font-size: 0.8rem; margin-bottom: .15rem; }
+    }
+}
+
+/* PC, tablets  */
+@media (min-width: 768px) {
+  .company-name {
+    float: left;
+  }
+  .content {
+    padding: 0 3rem;
+  }
+
+  body {
+      font-size: 16px !important;
+      h4 { font-size: 1.25rem; margin-bottom: .25rem; }
+      h5 { font-size: 1.1rem; margin-bottom: .15rem; }
+  }
 }
