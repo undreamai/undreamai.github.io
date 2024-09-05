@@ -59,6 +59,7 @@ a:hover {
 
 .footer {
 	color: rgba(255, 255, 255, .65);
+	padding-top: 5px;
 }
 
 .email {
@@ -81,6 +82,11 @@ a:hover {
 	.shield
 	{
 		height: 15px;
+	}
+
+	.btn {
+		padding: 0.2rem 0.5rem;
+		font-size: 0.8rem;
 	}
 }
 
