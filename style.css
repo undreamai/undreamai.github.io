@@ -57,9 +57,18 @@ a:hover {
 }
 
 
-.footer {
+footer,
+footer a,
+footer a:focus,
+footer a:hover {
+	padding: 5px 5px 0px 5px;
 	color: rgba(255, 255, 255, .65);
-	padding-top: 5px;
+}
+
+footer a,
+footer a:focus,
+footer a:hover {
+	text-decoration: none;
 }
 
 .email {
