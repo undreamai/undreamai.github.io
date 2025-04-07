@@ -66,7 +66,11 @@ h4, h5, h6 {
 } */
 
 span.color {
-	color: #0feb9e;
+	color: #F79F79;
+}
+
+span.color2 {
+	color: #9CD08F;
 }
 
 body > section,
@@ -223,7 +227,7 @@ body > section,
 
 .carousel-caption p:before,
 .carousel-caption p:after {
-color: #0feb9e;
+color: #19213C;
 content: "___";
 position: relative;
 top: -8px;
