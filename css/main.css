@@ -147,44 +147,26 @@ body > section,
 
 #navigation {
   background-color: rgba(16, 22, 54, 0.2);
-  border: 0 none;
+  border: 0;
   margin: 0;
-  
-    -webkit-transition: background-color 800ms linear;
-       -moz-transition: background-color 800ms linear;
-	    -ms-transition: background-color 800ms linear;
-         -o-transition: background-color 800ms linear;
-			transition: background-color 800ms linear;
+  transition: background-color 800ms linear;
 }
 
-/* .navbar-toggle i {
-	color: #fff;
-} */
-
-.navbar-brand {
-  padding: 0;
+.navbar-nav .nav-link {
+  border-top: 1px solid transparent;
+  color: white;
 }
 
-.navbar-nav li a {
-	border-top: 1px solid transparent;
-}
-
-.navbar-nav li a.current,
-.navbar-nav li a:focus,
-.navbar-nav li a:hover {
-	background-color: transparent;
-	border-top: 1px solid #32B0EE;
-	color: #fff;
-}
-
-@media (min-width: 768px) {
-  .navbar-header {
-    padding: 15px;
-  }
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:focus,
+.navbar-nav .nav-link:hover {
+  background-color: transparent;
+  border-top: 1px solid #32B0EE;
+  color: #fff;
 }
 
 .company-name-ai {
-	color: rgba(255, 255, 255, .65);
+  color: rgba(255, 255, 255, 0.65);
 }
 
 
@@ -227,7 +209,7 @@ body > section,
 
 .carousel-caption p:before,
 .carousel-caption p:after {
-color: #19213C;
+color: #9197AE;
 content: "___";
 position: relative;
 top: -8px;
@@ -289,11 +271,52 @@ top: -8px;
   background: rgba(0, 0, 0, 0.30);
 }
 
+
+
 /*=========================================
-	Features
+	Products
 ==========================================*/
 
-.features {
+
+.products .social-links {
+  margin-top: 5%;
+}
+
+.products .social-links li {
+	display: inline-block;
+}
+
+.products .social-links li a {
+  color: rgba(0, 0, 0, 0.347);
+  display: block;
+  margin: 0 6px;
+}
+
+.products .social-links li a:hover {
+  color: #000;
+}
+
+
+.products .sec-sub-title {
+	margin: 20px 0 30px;
+}
+
+.products .carousel-inner img {
+  max-height: 500px;
+  object-fit: contain;
+  width: 100%;
+}
+
+.products .carousel {
+  max-height: 400px;
+}
+
+
+/*=========================================
+	Services
+==========================================*/
+
+.services {
   background-color: #f4f7f9;
 }
 
