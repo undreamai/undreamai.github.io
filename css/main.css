@@ -544,7 +544,7 @@ top: -8px;
 ==========================================*/
 
 #facts {
-	background-image: url("../img/parallax/city.jpg");
+	background-image: url("../img/city.jpg");
 	background-color: rgba(6,32,51,.8);
 	background-attachment: fixed !important;
 	background-position: center center;
