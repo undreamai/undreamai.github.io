@@ -73,8 +73,7 @@ span.color2 {
 	color: #9CD08F;
 }
 
-body > section,
-.footer {
+body > section {
 	padding: 70px 0;
 }
 
@@ -692,10 +691,10 @@ label.error {
 ==========================================*/
 
 
-.footer {
-  background-color: #1ea78d;
-  border-top: 5px solid #062033;
-  color: #fff;
+.footer, .footer a {
+  /* background-color: #1ea78d; */
+  /* border-top: 5px solid #062033; */
+    color: #6a737b;
 }
 
 .footer a:hover {
@@ -703,7 +702,7 @@ label.error {
 }
 
 .footer h6 {
-  font-size: 14px;
+  font-size: 20px;
   font-weight: 700;
   line-height: 24px;
   margin-bottom: 30px;
@@ -740,9 +739,6 @@ label.error {
   line-height: 24px;
 }
 
-.footer-single ul {
-  }
-
 .footer-single li {
   line-height: 32px;
 }
@@ -769,4 +765,20 @@ label.error {
   position: fixed;
   right: 25px;
   z-index: 9;
+}
+
+
+footer,
+footer a,
+footer a:focus,
+footer a:hover {
+  font-size: 20px;
+	padding: 10px 10px 10px 10px;
+	color: rgba(255, 255, 255, .65);
+}
+
+footer a,
+footer a:focus,
+footer a:hover {
+	text-decoration: none;
 }
