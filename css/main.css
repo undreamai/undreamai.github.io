@@ -115,17 +115,20 @@ body>section {
 }
 
 #preloader {
-  background-color: #fff;
-  height: 100%;
   position: fixed;
-  width: 100%;
-  z-index: 1100
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: white; /* or whatever background you want */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
 }
-
-#preloader>img {
-  left: 47%;
-  position: absolute;
-  top: 48%
+#preloader img {
+  max-width: 200px; /* Adjust if needed */
+  height: auto;
 }
 
 /* Header */
