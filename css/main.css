@@ -98,8 +98,7 @@ body>section {
 
 .sec-title h3 {
   font-weight: 650;
-  /* text-transform: uppercase; */
-  margin-bottom: 50px
+  margin-bottom: 30px
 }
 
 .sec-sub-title {
@@ -294,21 +293,28 @@ body>section {
   top: 5px
 }
 
-.service-desc h5 {
+.service-desc h4 {
   color: #062033;
   font-weight: 600;
   margin-bottom: 25px
 }
 
+
 /* Showcase */
+
+.project-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
 .mix {
   display: none
 }
 
 .showcase-item {
-  float: left;
   width: 25%;
+  max-width: 350px;
   position: relative;
   aspect-ratio: 1.5
 }
