@@ -8,8 +8,11 @@ body {
     font-family: system-ui, 'Open Sans', sans-serif;
 
     line-height: 21px;
-	  font-size: 13px;
     color: #6a737b;
+}
+
+.fs-7 {
+  font-size: 0.8rem;
 }
 
 ol, ul {
