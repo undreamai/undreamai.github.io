@@ -39,6 +39,7 @@
 }
 
 /* Sizes  */
+
 .fs-0 {
   font-size: 3.5rem
 }
@@ -48,6 +49,7 @@
 }
 
 /* Basic styles  */
+
 body {
   background-color: #fff;
   font-family: system-ui, 'Open Sans', sans-serif;
@@ -132,6 +134,11 @@ body>section {
 }
 
 /* Header */
+
+.hamburger{
+  color:#6a737b;
+  font-size:20px;
+}
 
 .company-name-ai {
   color: rgba(255, 255, 255, .65);
