@@ -35,6 +35,8 @@
     <link rel="stylesheet" href="css/main.css">
     <!-- media-queries -->
     <link rel="stylesheet" href="css/media-queries.css">
+    <!-- media-queries -->
+    <link rel="stylesheet" href="css/form.css">
 
     <!-- Modernizer Script for old Browsers -->
     <script src="js/modernizr-2.6.2.min.js"></script>
@@ -414,71 +416,38 @@
             <div class="row mb50">
 
                 <div class="sec-title text-center mb50 wow fadeInDown animated" data-wow-duration="500ms">
-                    <h2>Let’s Discuss</h2>
+                    <h2>Contact us</h2>
                     <div class="devider"><i class="fa fa-heart-o fa-lg"></i></div>
                 </div>
 
-                <div class="sec-sub-title text-center wow rubberBand animated" data-wow-duration="1000ms">
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
-                        totam rem aperiam, eaque ipsa quae ab illo inventore</p>
-                </div>
-
-                <!-- contact address -->
-                <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 wow fadeInLeft animated" data-wow-duration="500ms">
-                    <div class="contact-address">
-                        <h3>Cras at ultrices erat, sed vulputate!</h3>
-                        <p>2345 Setwant natrer, 1234,</p>
-                        <p>Washington. United States.</p>
-                        <p>(401) 1234 567</p>
-                    </div>
-                </div>
-                <!-- end contact address -->
-
                 <!-- contact form -->
-                <div class="col-lg-8 col-md-8 col-sm-7 col-xs-12 wow fadeInDown animated" data-wow-duration="500ms"
-                    data-wow-delay="300ms">
+                <div class="col-lg-8 col-md-8 col-sm-10 col-xs-12 mx-auto wow fadeInDown animated"
+                data-wow-duration="500ms" data-wow-delay="300ms">
                     <div class="contact-form">
-                        <h3>Say hello!</h3>
-                        <form action="#" id="contact-form">
-                            <div class="input-group name-email">
-                                <div class="input-field">
-                                    <input type="text" name="name" id="name" placeholder="Name" class="form-control">
-                                </div>
-                                <div class="input-field">
-                                    <input type="email" name="email" id="email" placeholder="Email"
-                                        class="form-control">
-                                </div>
+                        <form action="https://formspree.io/f/xzzekloo" class="fs-form" target="_top" method="POST">
+                            <div class="fs-field">
+                                <label class="fs-label" for="name">Name</label>
+                                <input class="fs-input" id="name" name="name" />
                             </div>
-                            <div class="input-group">
-                                <textarea name="message" id="message" placeholder="Message"
-                                    class="form-control"></textarea>
+                            <div class="fs-field">
+                                <label class="fs-label" for="email">Email</label>
+                                <input class="fs-input" id="email" name="email" required />
                             </div>
-                            <div class="input-group">
-                                <input type="submit" id="form-submit" class="pull-right" value="Send message">
+                            <div class="fs-field">
+                                <label class="fs-label" for="message">Message</label>
+                                <textarea class="fs-textarea" id="message" name="message"></textarea>
+                                <p class="fs-description">We usually respond within 1-2 business days.</p>
+                            </div>
+                            <div class="fs-button-group">
+                                <button class="fs-button" type="submit">Send</button>
                             </div>
                         </form>
                     </div>
                 </div>
                 <!-- end contact form -->
 
-                <!-- footer social links -->
-                <div class="col-lg-1 col-md-1 col-sm-1 col-xs-12 wow fadeInRight animated" data-wow-duration="500ms"
-                    data-wow-delay="600ms">
-                    <ul class="footer-social">
-                        <li><a href="https://www.behance.net/Themefisher"><i class="fa fa-behance fa-2x"></i></a></li>
-                        <li><a href="https://www.twitter.com/Themefisher"><i class="fa fa-twitter fa-2x"></i></a></li>
-                        <li><a href="https://dribbble.com/themefisher"><i class="fa fa-dribbble fa-2x"></i></a></li>
-                        <li><a href="https://www.facebook.com/Themefisher"><i class="fa fa-facebook fa-2x"></i></a></li>
-                    </ul>
-                </div>
-                <!-- end footer social links -->
-
             </div>
         </div>
-
-        <!-- Google map -->
-        <div id="map_canvas" class="wow bounceInDown animated" data-wow-duration="500ms"></div>
-        <!-- End Google map -->
 
     </section>
 
@@ -591,63 +560,6 @@
     </script>
     <!-- Custom Functions -->
     <script src="js/custom.js"></script>
-
-    <script type="text/javascript">
-        $(function () {
-            /* ========================================================================= */
-            /*	Contact Form
-            /* ========================================================================= */
-
-            $('#contact-form').validate({
-                rules: {
-                    name: {
-                        required: true,
-                        minlength: 2
-                    },
-                    email: {
-                        required: true,
-                        email: true
-                    },
-                    message: {
-                        required: true
-                    }
-                },
-                messages: {
-                    name: {
-                        required: "come on, you have a name don't you?",
-                        minlength: "your name must consist of at least 2 characters"
-                    },
-                    email: {
-                        required: "no email, no message"
-                    },
-                    message: {
-                        required: "um...yea, you have to write something to send this form.",
-                        minlength: "thats all? really?"
-                    }
-                },
-                submitHandler: function (form) {
-                    $(form).ajaxSubmit({
-                        type: "POST",
-                        data: $(form).serialize(),
-                        url: "process.php",
-                        success: function () {
-                            $('#contact-form :input').attr('disabled', 'disabled');
-                            $('#contact-form').fadeTo("slow", 0.15, function () {
-                                $(this).find(':input').attr('disabled', 'disabled');
-                                $(this).find('label').css('cursor', 'default');
-                                $('#success').fadeIn();
-                            });
-                        },
-                        error: function () {
-                            $('#contact-form').fadeTo("slow", 0.15, function () {
-                                $('#error').fadeIn();
-                            });
-                        }
-                    });
-                }
-            });
-        });
-    </script>
 </body>
 
 </html>
