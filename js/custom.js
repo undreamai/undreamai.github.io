@@ -32,7 +32,10 @@ $(document).ready(function(){
 	
     $(window).scroll(function () {
         if ($(window).scrollTop() > 400) {
-            $("#navigation").css("background-color","#19213C");
+            const element = document.querySelector('.color1');
+            const color = window.getComputedStyle(element).color;
+            console.log(color);
+            $("#navigation").css("background-color", color);
         } 
         else {
             $("#navigation").css("background-color","#000000");

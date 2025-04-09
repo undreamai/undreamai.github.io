@@ -5,9 +5,9 @@
 @media (min-width: 980px) and (max-width: 1150px) {
 
 /* slider */
-.carousel-caption h3 {
+/* .carousel-caption h3 {
   font-size: 45px;
-}
+} */
 
 /* works */
 
@@ -30,13 +30,13 @@
 
 /* slider */
 
-.carousel-caption h2 {
+/* .carousel-caption h2 {
   font-size: 55px;
 }
 
 .carousel-caption h3 {
   font-size: 36px;
-}
+} */
 
 /* services */
 
@@ -87,10 +87,10 @@ background-position: center top !important;
 .counters-item i {
   margin: 0 0 15px;
 }
-
+/* 
 .counters-item strong {
   font-size: 45px;
-}
+} */
 
 /* contact */
 
@@ -123,12 +123,11 @@ background-position: center top !important;
 ==============================================================*/
 
 @media only screen and (max-width: 767px) {
-
+/* 
 .sec-sub-title p {
   font-size: 14px;
 }
 
-/* slider */
 .carousel-caption h2 {
   font-size: 35px;
 }
@@ -139,7 +138,7 @@ background-position: center top !important;
 
 .carousel-caption p {
   font-size: 14px;
-}
+} */
 
 .social-links {
   margin-top: 20%;
