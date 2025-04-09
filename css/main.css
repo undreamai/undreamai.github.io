@@ -276,6 +276,11 @@ body>section {
   max-height: 400px
 }
 
+#reviewCarousel {
+  margin-top: 25px;
+  height:100px;
+}
+
 /* Services */
 
 .services {
