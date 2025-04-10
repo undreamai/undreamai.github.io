@@ -329,13 +329,12 @@ body>section {
 .service-desc {
   margin-left: 70px;
   position: relative;
-  top: 5px
 }
 
-.service-desc h4 {
+.service-header h4 {
   color: #062033;
   font-weight: 600;
-  margin-bottom: 25px
+  margin-bottom: 20px
 }
 
 .service-image {
@@ -359,7 +358,7 @@ body>section {
 
 .showcase-item {
   width: 25%;
-  max-width: 350px;
+  max-width: 370px;
   position: relative;
   aspect-ratio: 1.5
 }
