@@ -1,6 +1,6 @@
 /* Color palette  */
 
-.color1, .facts {
+.color1, .facts, .specialization-list li i {
   color: #062033
 }
 
@@ -110,7 +110,7 @@ h6 {
 }
 
 body>section {
-  padding: 70px 0
+  padding: 10px 0 20px
 }
 
 .sec-title h3 {
@@ -163,6 +163,7 @@ body>section {
   background-color: #000;
   border: 0;
   margin: 0;
+  padding: 0 !important;
   transition: background-color .8s linear
 }
 
@@ -175,7 +176,7 @@ body>section {
 .navbar-nav .nav-link:focus,
 .navbar-nav .nav-link:hover {
   background-color: transparent;
-  border-top: 1px solid #f7dba7;
+  border-bottom: 1px solid #f7dba7;
   color: #fff
 }
 
@@ -233,11 +234,12 @@ body>section {
 
 .social-links li a {
   display: block;
-  margin: 0 6px
+  margin: 0 6px;
+  color: rgba(255, 255, 255, .5);
 }
 
 .social-links li a:hover {
-  color: #fff
+  color: #fff !important
 }
 
 .carousel-indicators {
@@ -329,9 +331,28 @@ body>section {
 
 /* Services */
 
-.service-desc {
-  margin-left: 70px;
-  position: relative;
+.specialization-text {
+  font-size: 1rem;
+  margin-top: 40px;
+}
+
+.specialization-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.specialization-list li {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.specialization-list li i {
+  margin-right: 10px;
 }
 
 .service-header h4 {
@@ -345,7 +366,6 @@ body>section {
   width: auto;
   margin-bottom: 1rem;
 }
-
 
 /* Showcase */
 
@@ -361,7 +381,7 @@ body>section {
 
 .showcase-item {
   width: 25%;
-  max-width: 370px;
+  max-width: 320px;
   position: relative;
   aspect-ratio: 1.5
 }
@@ -438,7 +458,7 @@ body>section {
 
 .parallax-overlay {
   background-color: rgba(6, 32, 51, .8);
-  padding: 50px 0;
+  padding: 20px 0;
   height: 100%;
 }
 
