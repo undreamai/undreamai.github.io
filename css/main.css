@@ -32,6 +32,13 @@
   background-color: #f7dba7
 }
 
+.btn {
+  background-color: #062033;
+  color: white;
+  font-size: 1rem;
+}
+
+
 .body,
 .footer,
 .footer a {
@@ -46,6 +53,10 @@
 
 .fs-7 {
   font-size: .8rem
+}
+
+.lead {
+  font-size: 1rem
 }
 
 /* Basic styles  */
@@ -90,7 +101,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 400;
+  font-weight: normal;
   margin: 0
 }
 
@@ -257,6 +268,10 @@ body>section {
 }
 
 /* Products */
+.carousel-inner, .carousel {
+  max-height: none !important;
+  height: auto !important;
+}
 
 .products .social-links {
   margin-top: 5%
@@ -272,12 +287,17 @@ body>section {
   margin: 0 6px
 }
 
+.bg-rounded{
+  border-radius: 16px;
+  overflow: hidden;
+}
+
 .products .social-links li a:hover {
   color: #000
 }
 
 .products .sec-sub-title {
-  margin: 20px 0 30px
+  margin: 20px 10px 20px 10px
 }
 
 .products .carousel-inner img {
@@ -290,16 +310,21 @@ body>section {
   max-height: 400px
 }
 
+#productCarousel {
+  max-width: 85%
+}
+
 #reviewCarousel {
   margin-top: 25px;
-  height:100px;
+  height:92px !important;
+}
+
+#reviewCarousel .container
+{
+  padding: 0 !important;
 }
 
 /* Services */
-
-.services {
-  background-color: #f4f7f9
-}
 
 .service-desc {
   margin-left: 70px;
@@ -311,6 +336,12 @@ body>section {
   color: #062033;
   font-weight: 600;
   margin-bottom: 25px
+}
+
+.service-image {
+  max-height: 100px;
+  width: auto;
+  margin-bottom: 1rem;
 }
 
 
@@ -400,12 +431,13 @@ body>section {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 0
+  padding: 0 !important;
 }
 
 .parallax-overlay {
   background-color: rgba(6, 32, 51, .8);
-  padding: 70px 0
+  padding: 50px 0;
+  height: 100%;
 }
 
 .counters-item {

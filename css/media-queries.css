@@ -1,261 +1,174 @@
 /*============================================================
-	For Small Desktop
-==============================================================*/
-
-@media (min-width: 980px) and (max-width: 1150px) {
-
-/* slider */
-/* .carousel-caption h3 {
-  font-size: 45px;
-} */
-
-/* works */
-
-
-/* team */
-
-.member-thumb {
-  width: auto;
-}
-
-}
-
-
-/*============================================================
-	Tablet (Portrait) Design for a width of 768px
-==============================================================*/
-
-@media (min-width: 768px) and (max-width: 979px) {
-
-
-/* slider */
-
-/* .carousel-caption h2 {
-  font-size: 55px;
-}
-
-.carousel-caption h3 {
-  font-size: 36px;
-} */
-
-/* services */
-
-.service-item {
-  margin: 0 auto 30px;
-  text-align: center;
-  width: 325px;
-}
-
-.service-icon {
-  float: none;
-  margin: 0 auto 15px;
-  text-align: center;
-  width: 50px;
-}
-
-.service-desc {
-  margin-left: 0;
-  position: relative;
-  top: 0;
-}
-
-/* works */
-
-.work-item {
-  width: 33%;
-}
-
-/* team */
-
-.member-thumb .overlay h5 {
-  margin: 25px 0;
-}
-
-.member-thumb {
-  margin: 0 auto;
-}
-
-/* fatcs */
-
-#facts {
-background-position: center top !important;
-}
-.counters-item {
-  margin-bottom: 30px;
-}
-
-.counters-item i {
-  margin: 0 0 15px;
-}
-/* 
-.counters-item strong {
-  font-size: 45px;
-} */
-
-/* contact */
-
-.contact-form .name-email input {
-  margin-right: 0;
-  width: 100%;
-}
-
-.footer-social {
-  margin-top: 45px;
-}
-
-/* footer */
-
-.footer-single {
-  margin-bottom: 30px;
-}
-
-/* Team mamber */
-	
-.team-member{
-  margin-bottom: 20px;
-}	
-	
-}
-
-
-/*============================================================
-	Mobile (Portrait) Design for a width of 320px
+	Mobile
 ==============================================================*/
 
 @media only screen and (max-width: 767px) {
-/* 
-.sec-sub-title p {
-  font-size: 14px;
-}
 
-.carousel-caption h2 {
-  font-size: 35px;
-}
+  body {
+    font-size: 0.8rem !important;
+    line-height: 17px;
+  }
 
-.carousel-caption h3 {
-  font-size: 22px;
-}
+  .fs-0 {
+    font-size: 1.7rem !important;
+  }
 
-.carousel-caption p {
-  font-size: 14px;
-} */
+  .fs-1 {
+    font-size: 1.2rem !important;
+  }
 
-.social-links {
-  margin-top: 20%;
-}
+  h3,
+  .h3 .fs-3 {
+    font-size: 1.2rem !important;
+  }
 
-/* services */
+  h4,
+  .h4,
+  .fs-4 {
+    font-size: 1.1rem !important;
+  }
 
-.service-item {
-  margin: 0 auto 30px;
-  text-align: center;
-  width: 280px;
-}
+  h5,
+  .h5 .fs-5 {
+    font-size: 1rem !important;
+  }
 
-.service-icon {
-  float: none;
-  margin: 0 auto 15px;
-  text-align: center;
-  width: 50px;
-}
+  h6,
+  .h6 .fs-6 {
+    font-size: 0.7rem !important;
+  }
 
-.service-desc {
-  margin-left: 0;
-  position: relative;
-  top: 0;
-}
+  .lead,
+  .fs-7 {
+    font-size: 0.65rem !important;
+    line-height: 12px;
+  }
 
-/* works */
+  body>section {
+    padding: 30px 0 !important;
+  }
 
-.work-item {
-  left: 5% !important;
-  width: 90%;
-}
+  .sec-title h3 {
+    margin-bottom: 15px !important;
+  }
 
-/* team */
+  .sec-sub-title {
+    margin: 0 0 10px !important;
+  }
 
-.team-member {
-  margin-bottom: 30px;
-}
+  .sec-sub-title p {
+    line-height: 18px;
+  }
 
-.team-member:last-child {
-  margin-bottom: 0;
-}
+  /* products */
 
-.member-thumb {
-  margin: 0 auto;
-}
+  #reviewCarousel {
+    margin-top: 0px;
+  }
 
-/* facts */
+  .social-links {
+    margin-top: 10px !important;
+  }
 
-#facts {
-background-position: center top !important;
-}
+  /* services */
 
-.counters-item {
-  margin-bottom: 30px;
-}
+  .service-item {
+    margin: 0 auto 30px;
+    text-align: center;
+    width: 280px;
+  }
 
-/* contact */
-.contact-address {
-  margin-bottom: 30px;
-}
+  .service-icon {
+    float: none;
+    margin: 0 auto 15px;
+    text-align: center;
+    width: 50px;
+  }
 
-.footer-social {
-  margin-top: 20px;
-  text-align: center;
-}
+  .service-desc {
+    margin-left: 0;
+    position: relative;
+    top: 0;
+  }
 
-.footer-social li {
-  display: inline-block;
-}
+  .service-desc h4 {
+    margin-bottom: 10px !important;
+  }
 
-.footer-social li a {
-  margin: 0 10px;
-}
+  .service-image {
+    max-height: 80px !important;
+    margin-bottom: 0.5rem;
+  }
 
-/* footer */
+  /* showcase */
 
-.footer-single {
-  margin-bottom: 30px;
-}
+  .showcase-item {
+    width: 40% !important;
+    padding: 5px
+  }
 
-}
+  /* facts */
 
+  #facts {
+    background-position: center top !important;
+  }
 
-/*============================================================
-	Mobile (Landscape) Design for a width of 480px
-==============================================================*/
+  .parallax-overlay {
+    padding: 20px 0 !important;
+  }
 
-@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .counters-item {
+    margin-bottom: 15px;
+  }
 
+  .counters-item i {
+    height: 45px;
+    margin: 0 0 10px;
+    padding: 10px 0 0;
+    width: 45px
+  }
 
-/* services */
+  .counters-item strong {
+    line-height: 20px
+  }
 
-.service-item {
-  margin: 0 auto 30px;
-  text-align: center;
-  width: 325px;
-}
+  .counters-item h6 {
+    line-height: 12px;
+    margin-top: 15px;
+  }
 
-.service-icon {
-  float: none;
-  margin: 0 auto 15px;
-  text-align: center;
-  width: 50px;
-}
+  .fa-3x {
+    font-size: 2em; 
+  }
+  
 
-.service-desc {
-  margin-left: 0;
-  position: relative;
-  top: 0;
-}
+  /* contact */
 
-/* works */
+  .fs-field {
+    display: flex;
+    align-items: center;
+  }
 
-.work-item {
-  left: inherit !important;
-  width: 50%;
-}
+  .fs-form {
+    row-gap: 0.5rem !important;
+  }
 
+  .form-label,
+  .form-control {
+    font-size: 0.75rem !important;
+    line-height: 0.8rem !important;
+  }
+
+  .btn {
+    font-size: 0.8rem;
+  }
+
+  /* footer */
+
+  footer,
+  footer a,
+  footer a:focus,
+  footer a:hover {
+    padding: 5px 5px 5px 5px;
+  }
 }
