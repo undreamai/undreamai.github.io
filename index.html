@@ -449,7 +449,8 @@
                     <!-- contact form -->
                 <div class="col-lg-8 col-md-8 col-sm-10 col-xs-12 mx-auto wow fadeInDown animated" data-wow-duration="500ms" data-wow-delay="300ms">
                     <div class="contact-form">
-                        <form action="https://formspree.io/f/xzzekloo" method="POST" target="_top">
+                        <div id="messageDiv"></div>
+                        <form id="contactForm">
                             <div class="mb-3">
                                 <label for="name" class="form-label">Name</label>
                                 <input type="text" class="form-control" id="name" name="name" required>
@@ -530,5 +531,7 @@
         </script>
         <!-- Custom Functions -->
         <script src="js/custom.js"></script>
+        <!-- contact form -->
+        <script src="js/contact-form.js"></script>
     </body>
 </html>
