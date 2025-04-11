@@ -37,7 +37,7 @@ async function recaptcha(token) {
 
     document.getElementById("contactForm").style.display = "none";
     if (success) {
-        messageDiv.innerHTML = `<p>Thank you for reaching out, we will get back to you shortly! We aim to reply to all queries within 1-2 business days.</p>`;
+        messageDiv.innerHTML = `<p>Thank you for reaching out, we will get back to you shortly! We aim to reply all queries within 1-2 business days.</p>`;
     } else {
         messageDiv.innerHTML = `<p style='color: red;'>An error occurred while submitting your request. Please email us directly at <a href="mailto:hello@undream.ai" style="color:red;text-decoration:underline;">hello@undream.ai</a>.</p>`;
     }
