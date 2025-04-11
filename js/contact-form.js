@@ -1,16 +1,11 @@
-document.getElementById("contactForm").addEventListener("submit", async function(e) {
-    e.preventDefault();
+async function recaptcha(token) {
+    console.log(token);
 
     // Clear any previous messages
     const messageDiv = document.getElementById("messageDiv");
     messageDiv.innerHTML = "";
 
-    // Get form values
-    const name = document.getElementById("name").value;
     let email = document.getElementById("email").value;
-    const message = document.getElementById("message").value;
-
-    // Email validation regex
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(email)) {
         messageDiv.innerHTML = "<p style='color: red;'>Please enter a valid email address.</p>";
@@ -19,7 +14,8 @@ document.getElementById("contactForm").addEventListener("submit", async function
 
     // Convert form data to URL-encoded string
     const formData = new FormData(document.getElementById("contactForm"));
-    const urlEncodedData = new URLSearchParams(formData).toString();
+    let urlEncodedData = new URLSearchParams(formData).toString();
+    urlEncodedData += `&g-recaptcha-response=${token}`;
 
     let success = false;
     try {
@@ -45,4 +41,4 @@ document.getElementById("contactForm").addEventListener("submit", async function
     } else {
         messageDiv.innerHTML = `<p style='color: red;'>An error occurred while submitting your request. Please email us directly at <a href="mailto:hello@undream.ai" style="color:red;text-decoration:underline;">hello@undream.ai</a>.</p>`;
     }
-});
+}
