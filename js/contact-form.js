@@ -1,4 +1,15 @@
-document.getElementById("contactForm").addEventListener("submit", async function(e) {
+
+function recaptcha(token) {
+    var form = document.getElementById("contactForm");
+    var input = document.createElement("input");
+    input.type = "hidden";
+    input.name = "g-recaptcha-response";
+    input.value = token;
+    form.appendChild(input);
+    form.submit();
+  }
+  
+  document.getElementById("contactForm").addEventListener("submit", async function(e) {
     e.preventDefault();
 
     // Clear any previous messages

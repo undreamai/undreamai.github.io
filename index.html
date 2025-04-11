@@ -450,7 +450,7 @@
                 <div class="col-lg-8 col-md-8 col-sm-10 col-xs-12 mx-auto wow fadeInDown animated" data-wow-duration="500ms" data-wow-delay="300ms">
                     <div class="contact-form">
                         <div id="messageDiv"></div>
-                        <form id="contactForm">
+                        <form id="contactForm" action="?">
                             <div class="mb-3">
                                 <label for="name" class="form-label">Name</label>
                                 <input type="text" class="form-control" id="name" name="name" required>
@@ -463,6 +463,7 @@
                                 <label for="message" class="form-label">Message</label>
                                 <textarea class="form-control" id="message" name="message" rows="3" required></textarea>
                             </div>
+                            <div class="g-recaptcha" data-sitekey="6LfA8RMrAAAAAKmgxJacLvo50Vls80usehAb-rQT" data-callback="recaptcha" data-size="invisible"></div>
                             <button type="submit" class="btn btn-sm">Submit</button>
                         </form>
                     </div>
@@ -532,6 +533,9 @@
         <!-- Custom Functions -->
         <script src="js/custom.js"></script>
         <!-- contact form -->
-        <script src="js/contact-form.js"></script>
+        <script src="js/contact-form_test.js"></script>
+        <!-- reCAPTCHA -->
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
     </body>
 </html>
