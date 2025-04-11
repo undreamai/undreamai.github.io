@@ -1,3 +1,23 @@
+$(window).on('load', function() {
+    const submitButton = $('#contact-form-submit');
+    submitButton.prop('disabled', true);
+});
+
+
+document.getElementById("contactForm").addEventListener("input", function () {
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const message = document.getElementById("message").value;
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    const submitButton = document.getElementById("contact-form-submit");
+    if (name && email && message && emailRegex.test(email)) {
+        submitButton.disabled = false;
+    } else {
+        submitButton.disabled = true;
+    }
+});
+
 async function recaptcha(token) {
     console.log(token);
 
@@ -5,12 +25,6 @@ async function recaptcha(token) {
     const messageDiv = document.getElementById("messageDiv");
     messageDiv.innerHTML = "";
 
-    let email = document.getElementById("email").value;
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(email)) {
-        messageDiv.innerHTML = "<p style='color: red;'>Please enter a valid email address.</p>";
-        return;
-    }
 
     // Convert form data to URL-encoded string
     const formData = new FormData(document.getElementById("contactForm"));
