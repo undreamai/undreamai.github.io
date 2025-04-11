@@ -37,6 +37,8 @@
     </head>
     
     <body id="body" data-bs-spy="scroll" data-bs-target="#main-nav" data-bs-offset="100" tabindex="0">
+        <!-- recaptcha div -->
+        <div class="g-recaptcha" data-sitekey="6LfA8RMrAAAAAKmgxJacLvo50Vls80usehAb-rQT" data-callback="recaptcha" data-bind="contact-form-submit" data-action="action"></div>
         <!-- preloader -->
         <div id="preloader">
             <img src="img/preloader.gif" alt="Preloader">
@@ -464,7 +466,6 @@
                                 <textarea class="form-control" id="message" name="message" rows="3" required></textarea>
                                 <p class="g-recaptcha-terms fs-8">This site is protected by reCAPTCHA and the Google <a href="https://policies.google.com/privacy">Privacy Policy</a> and <a href="https://policies.google.com/terms">Terms of Service</a> apply.</p>
                             </div>
-                            <div class="g-recaptcha" data-sitekey="6LfA8RMrAAAAAKmgxJacLvo50Vls80usehAb-rQT" data-callback="recaptcha" data-bind="contact-form-submit" data-action="action"></div>
                             <button id="contact-form-submit" type="submit" class="btn btn-sm">Submit</button>
                         </form>
                     </div>
