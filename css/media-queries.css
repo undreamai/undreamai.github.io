@@ -46,6 +46,10 @@
     font-size: 0.7rem !important;
   }
 
+  .fs-8 {
+    font-size: 0.5rem !important;
+  }
+
   body>section {
     padding: 10px 0 !important;
   }

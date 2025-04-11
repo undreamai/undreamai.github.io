@@ -56,7 +56,11 @@
 }
 
 .fs-7 {
-  font-size: .8rem
+  font-size: 0.8rem
+}
+
+.fs-8 {
+  font-size: 0.6rem
 }
 
 .lead {
@@ -489,6 +493,20 @@ body>section {
 }
 
 /* Contact */
+
+.grecaptcha-badge {
+  visibility: hidden;
+}
+
+.g-recaptcha-terms, .g-recaptcha-terms a
+{
+  color: gray !important;
+}
+
+.g-recaptcha-terms a
+{
+  text-decoration:underline
+}
 
 .contact {
   padding-bottom: 0
